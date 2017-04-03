@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Length(cm):"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLength"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="  "
+            android:ems="10"
+            android:id="@+id/editTextLength" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Width(cm):"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewWidth"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="  "
+            android:ems="10"
+            android:id="@+id/editTextWidth" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Radius(cm):"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewRadius"
+            android:textSize="18dp"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="  "
+            android:ems="10"
+            android:id="@+id/editTextRadius"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.09">
+
+        <TextView
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="18dp"
+            android:text="Calculate Area For: "
+
+            android:id="@+id/textViewArea"
+            android:layout_weight="0.14" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/spinnerArea"
+            android:layout_weight="0.57" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="30dp">
+
+
+        <Button
+            android:text="Calculate"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonCalculate"
+            android:layout_weight="0.21" />
+
+        <Button
+            android:text="Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonClear"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Square Footage Value:"
+        android:layout_width="224dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSquareFootageValue"
+        android:textSize="18dp" />
+</LinearLayout>
